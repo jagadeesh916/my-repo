@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reuseable_files/new-style.css">
+    <style>
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+        </style>
+</head>
+<body>
+<header >
+    <div class="top-bar">
+        <div class="contact-info">
+            <a href="mailto:principal@tncollege.ac.in">principal@thiruthangalnadarcollege.edu.in</a> | 
+            <a href="#">+91-7448882082, +91-8608768629</a>
+                    </div>
+        <div class="links">
+            <i class="fa-solid fa-user" style="margin:3px"></i> <a href="https://thiruthangalnadarcollege.embase.in" target="_blank">Staff Login</a>
+            <i class="fa-solid fa-book-open-reader" style="margin:3px"></i><a href="https://nlistidp.inflibnet.ac.in/idp/profile/SAML2/Redirect/SSO?execution=e1s1">Libary</a>
+            <i class="fa-solid fa-graduation-cap" style="margin: 3px;"></i><a href="/COLLEGE_WEB/carrer_guidance_placement/placement.php">Placement</a>
+            <i class="fa-solid fa-s" style="margin:3px;"></i> <a href="https://swayamopenid.b2clogin.com/swayamopenid.onmicrosoft.com/B2C_1_swayam2/oauth2/v2.0/authorize?response_type=code&client_id=019220f4-2ec0-41c2-a727-529f1b54bb06&redirect_uri=https%3A%2F%2Fswayam.gov.in%2Fwso_ok&scope=https%3A%2F%2Fswayamopenid.onmicrosoft.com%2Fapi%2Fuser_impersonation+offline_access+openid&state=p5DHrfih4k9EmD7SYLN2Z3Pf1teSCY&access_type=authorization_code">swayam</a>
+            <a href="#" aria-label="Admission page" class="admission-btn"><i class="fa-solid fa-building-columns" style="margin:3px"></i>Admission</a>
+        </div>
+    </div>
+<!--  ---------------------------------------------------------------------------------------------- -->
+<!-- Logo and Title Section -->
+<div class="header-wrapper" style=" text-align: center; width: 100vw; display: flex; justify-content: center;margin: 8px; margin-left: 160px;">
+
+    <div class="my-wrapper" style="display: flex; justify-content: space-evenly; padding:20px; background-color:#a30000; width: 65vw; border-radius: 10px;">
+
+        <img src="/COLLEGE_WEB_1/assets/img/TNC_logo.png" alt="Thiruthangal Nadar College Logo" style="height: 75px; width: 150px;"/>
+
+           <div>
+             <h1 style="color: #fff; font-size: 30px; font-weight: bold;">Thiruthangal Nadar College</h1>
+             <p style="color: #EAEAEA;">Affiliated to the University of Madras & Reaccredited B++ Grade by NAAC<br>Selavayal, Chennai - 600051 <br>(belongs to the chennaivazh Hindu nadar Uravinmurai Dharma Fund)</p>
+           </div>
+
+            <img src="/COLLEGE_WEB_1/assets/img/kamarajar.jpg" alt="Additional College Image" class="extra-image"  style=" max-width: 100px; border-radius: 10px; /* Adjust the size of the second image height: auto; "/>
+
+    </div>
+</div>
+   <!-- Navigation Bar -->
+    <div class="div">
+<nav class="navbar" style='width: 100%;'>
+<div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<ul>
+
+    <li><a href="index.php" class="active-class" >Home</a></li>
+    <li class="dropdown">
+        <a href="about.php">About us</a>
+        <ul class="dropdown-content">
+            <li><a href="about.php">History</a></li>
+            <li><a href="about.php">Institution Policies</a></li>
+            <li><a href="about.php">Institutional Development Plan</a></li>
+            <li><a href="about.php">Accreditation</a></li>
+            <li><a href="about.php">Annual Reports</a></li>
+            <li><a href="about.php">Annual Accounts</a></li>
+            <li><a href="about.php">Sponsoring Body</a></li>
+            <li><a href="about.php">Organogram</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+    <a href="Adminstration.php">Administration </a>
+    <ul class="dropdown-content">
+       <li><a href="academics.php">Leadership</a></li>
+       <li><a href="about.php">Committee of Management</a></li>
+       <li><a href="academics.php">Academic Leadership</a></li>
+   </ul>
+   </li>
+    <li class="dropdown">
+        <a href="academics.php">Academics</a>
+        <ul class="dropdown-content">
+            <li><a href="academics.php">Course Offered</a></li>
+            <li><a href="academics.php">E-content</a></li>
+            <li><a href="academics.php">Academic calender</a></li>
+            <li><a href="academics.php">Academic Collabration</a></li>
+            <li><a href="academics.php">statutes</a></li>
+            <li><a href="academics.php">libary</a></li>
+           </ul>
+    </li>
+    <li class="dropdown">
+        <a href="admission.php">Admission</a>
+        <ul class="dropdown-content">
+            <li><a href="admission.php">Programee offered</a></li>
+            <li><a href="admission.php">Guidlines for admission</a></li>
+            <li><a href="admission.php">Online Application & Peospectus</a></li>
+            <li><a href="admission.php">Fee Refund Policy</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="campus.php">Campus Life</a>
+        <ul class="dropdown-content">
+            <li><a href="campus.php">Cultural activites</a></li>
+            <li><a href="campus.php">Student council</a></li>
+            <li><a href="campus.php">Student support</a></li>
+            <li><a href="campus.php">Club activities</a></li>
+            <li><a href="campus.php">Infrastructure</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+       <a href="/COLLEGE_WEB_1/extension_activity.php">Extension Act</a>
+       <ul class="dropdown-content">
+          <li><a href="academics.php">RRC</a></li>
+          <li><a href="about.php">YRC/LEO CLUB</a></li>
+      </ul>
+    <li class="dropdown">
+        <a href="student_life.php">Student Life</a>
+        <ul class="dropdown-content">
+            <li><a href="student_life.php">Sports</a></li>
+            <li><a href="student_life.php">NCC</a></li>
+            <li><a href="student_life.php">NSS</a></li>
+            <li><a href="student_life.php">Omudsperson</a></li>
+            <li><a href="student_life.php">Internal Compliant Committee</a></li>
+            <li><a href="student_life.php">Anti ragging cell</a></li>
+            <li><a href="student_life.php">Equal Opportunites</a></li>
+            <li><a href="student_life.php">Student Greviance Redressal</a></li>
+        </ul>
+    </li>
+    
+    <li class="dropdown">
+       <a href="research.php">Research</a>
+       <ul class="dropdown-content">
+           <li><a href="research.php">RESEARCH GUIDELINES</a></li>
+           <li><a href="research.php">PH.D ADMISSION GUIDELINES</a></li>
+           <li><a href="research.php">CENTRAL FACILITIES</a></li>
+       </ul>
+   </li>
+    <li><a href="/COLLEGE_WEB_1/Alumni.php">Alumni</a></li>
+    <li class="dropdown">
+       <a href="/COLLEGE_WEB_1/Information_center.php">Info Center</a>
+       <ul class="dropdown-content">
+          <li><a href="academics.php">Circular Notices</a></li>
+          <li><a href="about.php">News Letter</a></li>
+      </ul>
+    <li><a href="Gallery.php">Gallery</a></li>
+    <li class="dropdown">
+       <a href="iqac.php">IQAC</a>
+       <ul class="dropdown-content">
+           <li><a href="iqac.php">About IQAC</a></li>
+           <li><a href="iqac.php">AQAR</a></li>
+           <li><a href="iqac.php">Best Practices</a></li>
+           <li><a href="iqac.php">Feedback</a></li>
+           <li><a href="iqac.php">Alumni</a></li>
+           <li><a href="iqac.php">Gallery</a></li>
+           <li><a href="iqac.php">Institutional Distinctiveness</a></li>
+           <li><a href="iqac.php">IQAC Committee Members</a></li>
+           <li><a href="iqac.php">IQAC Minutes And ATR</a></li>
+           <li><a href="iqac.php">Quality Initiatives</a></li>
+           <li><a href="iqac.php">SSR Cycle II Report</a></li>
+           <li><a href="iqac.php>">NIRF</a></li>
+           <li><a href="iqac.php">Templates</a></li>
+           <li><a href="iqac.php">Internal Complaint Committee</a></li>
+           <li><a href="iqac.php">MOU's</a></li>
+       </ul>
+   </li>
+   <li><a href="contact.php">IDE</a></li>
+   <li><a href="contact.php">Contact</a></li>
+</ul>
+</nav>
+<div style="background-color: #a30000; color: white; padding: 20px; display: flex; align-items: center; margin-top:5px;">
+    <strong style="margin-right: 10px; font-size: 20px;">📢 Announcement:</strong>
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="width: 80%; font-size: 20px;">
+        As our students from BCA AND BSC CS With AI Students are participated in NewLogic 2k25 event in The New College and Won Winner in web designing  and Runner in Hackthon
+    </marquee>
+</div>
+</header>
+</body>
+</html>

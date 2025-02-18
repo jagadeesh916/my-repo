@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        /* Style the grid layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style for each PDF box */
+        .pdf-box {
+            background-color:#003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pdf-box:hover {
+            transform: scale(1.05);
+        }
+
+        .pdf-box img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* PDF title styling */
+        .pdf-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Create the PDF boxes -->
+    <h3>TEMPLATES</h3>
+    <div class="pdf-grid">
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">PTA Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf2.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Leave Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Staff Profile</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Permission Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Consent Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Resource Person Certificate</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Common Invitation</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">On-Duty Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Venue Booking Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Student Database Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Internship Certificate</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Industrial Visit Feedback Form</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf3.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Remedial Class</div>
+        </div>
+        <!-- Add more boxes for additional PDFs -->
+    </div>
+    <h3>MONTHLY REPORT</h3>
+    <div class="pdf-grid">
+        <div class="pdf-box" onclick="window.open('IQAC reports\AQAR\AQAR_2022_2023.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Monthly Report</div>
+        </div>        
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf2.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Monthly Report-Template</div>
+        </div>
+        <div class="pdf-box" onclick="window.open('path-to-your-pdf2.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">Monthly Report-PPT</div>
+        </div>
+    </div>
+    
+</body>
+</html>

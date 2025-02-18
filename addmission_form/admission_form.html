@@ -1,0 +1,57 @@
+
+<div id="admissionModal" class="form">
+    <div class="form-model">
+      <span class="close-Btn">&times;</span>
+      <h2>Admission Form</h2>
+<form action="/COLLEGE_WEB/addmission_form/submit_form.php" method="POST" enctype="multipart/form-data">
+  <div>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+  </div>
+  <div>
+      <label for="course">Courses:</label>
+      <select name="course" id="course">
+        <option value="B.C.A. Computer Application
+        ">B.C.A. Computer Application
+        </option>
+        <option value="B.Com. General">B.Com. General</option>
+        <option value="B.Sc. Computer Science">B.Sc. Computer Science</option>
+        <option value="B.A. English">B.A. English</option>
+        <option value="B.B.A. Business Administration">B.B.A. Business Administration</option>
+        <option value="B.Com. Accounting and Finance">B.Com. Accounting and Finance</option>
+        <option value="B.Com. Corporate Secretaryship">B.Com. Corporate Secretaryship</option>
+        <option value="B.Sc. Computer Science with AI">B.Sc. Computer Science with AI</option>
+        <option value="B.Sc. software application">B.Sc. software application</option>
+        <option value="B.Sc Mathematics">B.Sc Mathematics</option>
+        <option value="B.Sc. Plant biology">B.Sc. Plant biology</option>
+        <option value="B.S.W. Social Work">B.S.W. Social Work</option>
+        <option value="B.Com computer application">B.Com computer application</option>
+        <option value="M.S.C computer scicence">M.S.C computer scicence</option>
+        <option value="M.Com. General">M.Com. General</option>
+        <option value="phd computer application">phd computer application</option>
+      </select>
+  </div>
+  <div>
+      <label for="file_10th">10th Marks:</label>
+      <input type="file" id="file_10th" name="file_10th" required>
+  </div>
+  <div>
+      <label for="file_12th">12th Marks:</label>
+      <input type="file" id="file_12th" name="file_12th" required>
+  </div>
+  <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+  </div>
+  <button class="submit-btn" type="submit">Submit</button>
+</form>
+</div>
+</div>

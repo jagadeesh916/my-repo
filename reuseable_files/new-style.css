@@ -1,0 +1,19 @@
+.header-wrapper {
+    text-align: center; /* Centers content horizontally */
+}
+
+.logo-section { /* Red background */
+    color: white; /* White text for readability */
+    padding: 20px; /* Adds space around the text and logo */
+    display: inline-block; /* Ensures the background fits only around the content */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.logo-section img {
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+.my-wrapper{
+    display: flex;
+}

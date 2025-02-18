@@ -1,0 +1,21 @@
+#vision{
+    margin-left: 30px;
+}
+.Strategies li{
+    margin-left: 30px;
+    padding: 5px;
+}
+.Benefits li{
+    padding: 5px;
+    margin-left: 30px;
+}
+#Objective li{
+    margin-left: 30px;
+    padding: 5px;
+}
+li{
+    font-size: 20px;
+}
+#Objective li p{
+    font-size: 20px;
+}

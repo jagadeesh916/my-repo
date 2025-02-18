@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        /* Style the grid layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style for each PDF box */
+        .pdf-box {
+            background-color:#003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pdf-box:hover {
+            transform: scale(1.05);
+        }
+
+        .pdf-box img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* PDF title styling */
+        .pdf-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Create the PDF boxes -->
+    <h3>MOU'S</h3>
+    <div class="pdf-grid">
+        <div class="pdf-box" onclick="window.open('IQAC reports/MOU/TNC_MoU_Details.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">MOU_Details</div>
+        </div>
+    </div>
+</body>
+</html>

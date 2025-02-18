@@ -1,0 +1,86 @@
+/* General styling */
+body {
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#iqac-container {
+    display: flex;
+    padding: 20px;
+}
+
+#iqac-nav {
+    width: 25%;
+    background-color: #a30000; /* Same red color as in the image */
+    padding: 15px;
+}
+
+#iqac-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#iqac-nav ul li {
+    margin-bottom: 10px;
+}
+
+#iqac-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #900000; /* Slightly darker shade for links */
+}
+
+#iqac-nav ul li a:hover {
+    background-color: #b30000; /* Hover effect */
+}
+
+#iqac-content {
+    width: 75%;
+    padding-left: 20px;
+}
+
+#iqac-content h2 {
+    color: black; /* Heading color */
+}
+
+#iqac-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.title-iqac{
+    margin-top:30px;
+    margin-left: 20px;
+    font-size: 12px;
+    width:500px;
+    height:60px;
+    background-color:#003366;
+}
+
+.title-iqac h1{
+    padding:18px;
+    color: white;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #iqac-container {
+        flex-direction: column;
+    }
+
+    #iqac-nav {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+}

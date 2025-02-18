@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        /* Style the grid layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style for each PDF box */
+        .pdf-box {
+            background-color:#003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pdf-box:hover {
+            transform: scale(1.05);
+        }
+
+        .pdf-box img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* PDF title styling */
+        .pdf-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Create the PDF boxes -->
+    <h3>IQAC MINUTES AND ATR</h3>
+    <div class="pdf-grid">
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/IQAC_Mins_2022_2023.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2022-2023</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/ATR_22_23.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2022-2023</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/21-22-1.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2021-2022</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/21-22-1.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2021-2022</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/20-21.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2020-2021</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2020-2021</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/19-20-1.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2019-2020</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/19-20.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2019-2020</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/18-19.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2018-2019</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2018-2019</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/17-18.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2017-2018</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2017-2018</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('IQAC reports/IQAC_MINUTES_AND_ATR/17-18.pdf')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2016-2017</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2016-2017</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">IQAC MEETING 2015-2016</div>
+        </div>
+
+        <div class="pdf-box" onclick="window.open('')">
+            <img src="/COLLEGE_WEB/assets/iqac/pdf.webp" alt="PDF Icon">
+            <div class="pdf-title">ATR 2015-2016</div>
+        </div>
+
+        <!-- Add more boxes for additional PDFs -->
+    </div>
+
+</body>
+</html>

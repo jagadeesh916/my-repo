@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "poppins";
+}
+
+body{
+    background: none;
+    zoom: 100%;
+
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+        body{
+            zoom: 80%;
+        }
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 0px;
+    padding:5px;
+    font-size: 18px;
+}
+
+.admission-btn {
+    background-color: #a30000;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.admission-btn:hover {
+    background-color: lightcoral;
+}
+
+/* Logo and College Information Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    margin-right: 20px;
+}
+.logo-2{
+    width: 150px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.college-info #college-name {
+    font-size: 40px  !important;
+    margin: 0  !important;
+    color: black  !important;
+    font-weight: 400  !important;
+}
+
+.college-info p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #003366;
+    padding: 10px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 15px;
+    position: relative; /* Required for dropdown positioning */
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 5px;
+    display: block;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #a30000;
+    border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display:none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    min-width: 200px;
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.dropdown-content li{
+    display: none;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:#a30000;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content li{
+    display:block;
+}
+/* Home Link */
+.home-link {
+    font-weight: bold;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Initial Navbar Style */
+.navbar {
+    background-color: #003366;
+    padding: 10px 30px;
+    width: 96.4%;
+    z-index: 998;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Style when navbar is fixed */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust padding when navbar is fixed */
+body.fixed-nav-padding {
+    padding-top: 60px; /* Adjust according to your navbar height */
+}
+/* Hide menu by default on mobile and show only when active */
+
+
+/* Hamburger icon for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) 
+    {
+        .navbar ul {
+            display: none;
+            flex-direction: column;
+        }
+        
+        .navbar ul.active {
+            display: flex;
+        }
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+    .college-info h1 {
+        font-size: 20px;
+        margin: 0;
+        color: black;
+    }
+    
+.college-info p {
+    font-size: 10px;
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.logo {
+    width: 120px;
+    height: 60px;
+    margin-right: 20px;
+}
+}
+/* Responsive changes for mobile */
+@media (max-width: 768px) {
+    /* Stack the elements in the top bar vertically */
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .top-bar .contact-info, .top-bar .linkis {
+        margin-bottom: 10px; /* Add some space between sections */
+    }
+
+    .top-bar .contact-info a, .top-bar .linkis a {
+        display: block;
+        text-align: center; /* Space between each link */
+    }
+
+    .top-bar .admission-btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+.active-class:active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo-section-1{
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+}
