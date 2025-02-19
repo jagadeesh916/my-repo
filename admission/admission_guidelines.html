@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission Guidelines</title>
-    <!-- Link to Tailwind CSS for styling -->
-    <link href="css/tailwind.css" rel="stylesheet">
-    <!-- Favicon for the website -->
-    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="bg-gray-100 font-sans antialiased">
-    <div class="max-w-4xl mx-auto px-4 py-10">
-        <header class="text-center mb-8">
-            <h1 class="text-4xl font-extrabold text-gray-900">Admission Guidelines</h1>
-            <p class="mt-2 text-lg text-gray-600">Please read the guidelines carefully before applying for admission.</p>
-        </header>
-
-        <!-- Admission Guidelines PDF Link -->
-        <section>
-            <a href="/COLLEGE_WEB/assets/online_application_files/UG-Application-2024.pdf" target="_blank"
-                class="flex items-center justify-between bg-red-600 text-white hover:bg-red-700 py-3 px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-                <span class="text-xl font-semibold">Download Admission Guidelines</span>
-                <svg xmlns="http://www
+<body>
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form action="#" method="post" class="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="options">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
